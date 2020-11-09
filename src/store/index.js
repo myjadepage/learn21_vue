@@ -4,8 +4,14 @@ import Vuex from "vuex";
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: {},
-  mutations: {},
+  state: {
+    isSideOpen: false
+  },
+  mutations: {
+    toggleNav() {
+      this.state.isSideOpen = !this.state.isSideOpen;
+    }
+  },
   actions: {},
   modules: {}
 });

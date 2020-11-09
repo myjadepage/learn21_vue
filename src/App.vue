@@ -1,32 +1,21 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
-  </div>
+  <!-- <div id="app">
+     <Container/>
+  </div> -->
+  <router-view></router-view>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+// import Container from './components/container/Container'
 
-#nav {
-  padding: 30px;
+export default {
+  components: {
+    // Container
+  },
+  name: "App"
+};
+</script>
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-</style>
+<!--<style src="line-awesome/dist/line-awesome/css/line-awesome.min.css"></style>
+<style lang="css" src="@/assets/css/bootstrap.min.css"></style>
+<style lang="css" src="./assets/css/learn21.css"></style>-->
